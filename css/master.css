@@ -1,0 +1,101 @@
+.text  h1 {
+  font-size: 15px;
+}
+.text p {
+  font-size: 10px;
+}
+.links {
+  position: relative;
+} 
+
+.links i {
+  position: absolute;
+  top: -15px;
+  right: 0;
+  display: none;
+}
+
+input::placeholder {
+  color: rgb(136, 134, 134) !important ;
+}
+
+ul {
+  display: flex;
+  list-style: none; 
+  align-items: center;
+}
+
+.links li {
+  padding: 1px 15px;
+  margin-left: 20px;
+  border: 2px solid aqua ;
+  border-radius: 10px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media(max-width:692px){
+  .link{
+    flex-direction: column;
+  }
+  .links li {
+    margin: 5px 0;
+  }
+  .links i {
+    display: flex;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
+
+section {
+  background-image: url(../imgs/banner.png);
+  min-height: 450px;
+  background-size: cover;
+  /* height: 100vh; */
+  position: relative;
+}
+
+section .search {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+}
+
+.form-control {
+  background-color: inherit;
+  border: none;
+
+}
+
+.form-control:focus  {
+  background-color: inherit;
+  box-shadow: none;
+  color: white;
+  overflow: hidden;
+}
+
+.btn-info {
+  transition: 0.2;
+}
+
+.btn-info:hover {
+  background-color: rgb(25, 220, 220);
+}
+
+.card {
+  background-color:inherit;
+  color: white;
+}
+
+#temp {
+  font-size: 100px;
+}
+
+.max-temp  {
+  font-size: 50px;
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./imgs/weather.webp" type="./imgs/weather.webp">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/master.css">
+  <title>Weather App</title>
+</head>
+<body>
+
+      <header class="bg-black">
+        <div class="container d-flex align-items-center justify-content-between  p-4 ">
+          <div class="logo d-flex align-items-center ">
+              <img src="./imgs/logo@2x.png" class="w-25 "  alt="">
+            <div class="text ms-2 text-white ">
+              <h1>Weather</h1>
+            <p>Tagline goes here</p>
+            </div>
+          </div>
+          <div class="links">
+            <i class="fa-solid fa-bars text-white"></i>
+            <ul class="link" >
+              <li><a href="">Home</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Live Cameras</a></li>
+              <li><a href="">Photos</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </header>
+          <!-- search -->
+      <section>
+        <div class="search">
+          <div class="container">
+            <form id="form"  class="d-flex bg-black rounded py-1 px-3" >
+              <input  type="text" id="search" class="form-control bg-black " placeholder="Enter Your Location " >
+              <button class="btn btn-info px-4  text-white "  id="submit" > Find  </button>
+            </form>
+          </div>
+        </div>
+        <div class="weather position-absolute top-50 w-100 pb-5">
+          <div class="container">
+            <div class="row g-3 ">
+              <!--today-section-->
+              <div class="card col-md-4 rounded-0 border-0 ">
+                <div class="card-body bg-black rounded shadow">
+                  <div class="text d-flex justify-content-between align-items-center">
+                    <h6 id="day" ></h6>
+                    <span id="number-day" ></span>
+                    <span id="month" ></span>
+                  </div>
+                  <span id="city" ></span>
+                  <p id="temp" > </p>
+                  <img id="sun-day" src="./imgs/weather.webp" alt="">
+                  <p id="text-info" ></p>
+                  <ul  class="info-day justify-content-between p-0" >
+                    <li>
+                      <img src="./imgs/icon-umberella.png" alt="">
+                      <span id="rining" ></span>
+  
+                    </li>
+                    <li>
+                      <img src="./imgs/icon-wind.png" alt="">
+                      <span id="wining" ></span>
+  
+                    </li>
+                    <li>
+                      <img src="./imgs/icon-compass.png" alt="">
+                      <span id="dircation" ></span>
+  
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--towmory-section-->           
+               <div class="card col-md-4 rounded-0 border-0">
+                <div class="card-body bg-black rounded shadow text-center">
+                  <div class="text ">
+                    <h6 class="day" >saturday</h6>                    
+                  </div>
+                  <img class="sun" src="./imgs/weather.webp" alt="">
+                  <p class="max-temp " >16 <sup>o</sup> c</p>
+                  <p class="averg-tem" >13.5 <sup>0</sup></p>
+                  <p class="text-info" >Partly Cloud</p>
+                </div>
+              </div>
+              
+              <div class="card col-md-4 rounded-0 border-0 ">
+                <div class="card-body bg-black rounded shadow text-center">
+                  <div class="text ">
+                    <h6 class="day" >saturday</h6>
+                    
+                  </div>
+  
+                  <img class="sun" src="./imgs/weather.webp" alt="">
+                  <p class="max-temp " >16 <sup>o</sup> c</p>
+                  <p class="averg-tem" >13.5 <sup>0</sup></p>
+                  <p class="text-info" >Partly Cloud</p>
+                </div>
+              </div> 
+              
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+
+  <script src="./js/bootstrap.bundle.min.js" ></script>
+  <script src="./js/index.js" ></script>
+</body>
+</html>
