@@ -25,7 +25,7 @@ const input=document.getElementById('search')
 
 // get weather Data 
 async function  getWeatherData(city){
-  const responsedata=await fetch(`http://api.weatherapi.com/v1/forecast.json?key=dce639dea6e74aeb8d900024250803&q=${city}&days=3`)
+  const responsedata=await fetch(`https://api.weatherapi.com/v1/forecast.json?key=dce639dea6e74aeb8d900024250803&q=${city}&days=3`)
   let data= await responsedata.json()
   return data
 }
